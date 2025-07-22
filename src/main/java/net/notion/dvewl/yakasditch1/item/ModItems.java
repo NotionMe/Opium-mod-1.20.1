@@ -29,6 +29,14 @@ public class ModItems {
                         settings -> new OpiumPickaxe(OpiumToolMaterial.INSTANCE, 1, -2.8f, settings),
                         new Item.Settings());
 
+        public static final Item OPIUM_PICKAXE_LEVEL1 = register("opium_pickaxe_level1",
+                        settings -> new OpiumPickaxe_level1(OpiumToolMaterial.INSTANCE, 1, -2.8f, settings),
+                        new Item.Settings());
+
+        public static final Item OPIUM_PICKAXE_LEVEL2 = register("opium_pickaxe_level2",
+                        settings -> new OpiumPickaxe_level2(OpiumToolMaterial.INSTANCE, 1, -2.8f, settings),
+                        new Item.Settings());
+
         // Item Group
         public static final ItemGroup YAKASDITCH_GROUP = Registry.register(
                         Registries.ITEM_GROUP,
@@ -42,6 +50,8 @@ public class ModItems {
                                                 entries.add(ModBlocks.OPIUM_ORE);
                                                 entries.add(OPIUM_SWORD);
                                                 entries.add(OPIUM_PICKAXE);
+                                                entries.add(OPIUM_PICKAXE_LEVEL1);
+                                                entries.add(OPIUM_PICKAXE_LEVEL2);
                                         })
                                         .build());
 

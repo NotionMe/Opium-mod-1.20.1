@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ODO",
+    "GIG",
+    "OGO"
+  ],
+  "key": {
+    "O": { "item": "yakas-ditch-1:opium_ingot" },
+    "I": { "item": "yakas-ditch-1:opium_pickaxe_level1" },
+    "G": { "item": "minecraft:diamond" },
+    "D": { "item": "minecraft:emerald" }
+  },
+  "result": {
+    "item": "yakas-ditch-1:opium_pickaxe_level2"
+  }
+}
