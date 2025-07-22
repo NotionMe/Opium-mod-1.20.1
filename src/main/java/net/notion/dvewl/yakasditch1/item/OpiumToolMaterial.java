@@ -24,7 +24,7 @@ public class OpiumToolMaterial implements ToolMaterial {
 
     @Override
     public int getMiningLevel() {
-        return 2; // рівень добування (як IRON)
+        return 4; // рівень добування (як netherite)
     }
 
     @Override

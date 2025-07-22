@@ -40,7 +40,6 @@ public class ModItems {
                                                 entries.add(OPIUM_INGOT);
                                                 entries.add(RAW_OPIUM);
                                                 entries.add(ModBlocks.OPIUM_ORE);
-                                                entries.add(ModBlocks.CUSTOM_ENCHANTING_TABLE);
                                                 entries.add(OPIUM_SWORD);
                                                 entries.add(OPIUM_PICKAXE);
                                         })

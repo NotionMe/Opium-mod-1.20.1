@@ -15,9 +15,6 @@ public class ModBlocks {
             .strength(3.0f, 3.0f)
             .requiresTool()));
 
-    public static final Block CUSTOM_ENCHANTING_TABLE = registerBlock("custom_enchanting_table",
-    new CustomEnchantingTableBlock(FabricBlockSettings.create().strength(4.0f)));
-
     private static Block registerBlock(String name, Block block) {
         Registry.register(Registries.BLOCK, new Identifier(YakasDitch1.MOD_ID, name), block);
         Registry.register(Registries.ITEM, new Identifier(YakasDitch1.MOD_ID, name),
