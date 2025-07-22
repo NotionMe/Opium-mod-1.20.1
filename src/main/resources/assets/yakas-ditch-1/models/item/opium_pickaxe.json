@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "yakas-ditch-1:item/opium_pickaxe"
+  }
+}

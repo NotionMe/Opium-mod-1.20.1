@@ -1,0 +1,75 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "yakas-ditch-1:item/opium_sword"
+	},
+	"elements": [
+		{
+			"from": [2.5, 12, 3.5],
+			"to": [14.5, 19, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 12, 6.5]},
+			"faces": {
+				"north": {"uv": [6, 0, 12, 3.5], "texture": "#2"},
+				"east": {"uv": [6, 7, 10, 10.5], "texture": "#2"},
+				"south": {"uv": [6, 3.5, 12, 7], "texture": "#2"},
+				"west": {"uv": [0, 8, 4, 11.5], "texture": "#2"},
+				"up": {"uv": [6, 4, 0, 0], "texture": "#2"},
+				"down": {"uv": [6, 4, 0, 8], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7, 0, 6],
+			"to": [10, 3, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [7, 10.5, 8.5, 12], "texture": "#2"},
+				"east": {"uv": [8.5, 10.5, 10, 12], "texture": "#2"},
+				"south": {"uv": [11, 7, 12.5, 8.5], "texture": "#2"},
+				"west": {"uv": [11, 8.5, 12.5, 10], "texture": "#2"},
+				"up": {"uv": [12.5, 11.5, 11, 10], "texture": "#2"},
+				"down": {"uv": [1.5, 11.5, 0, 13], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.5, 3, 6.5],
+			"to": [9.5, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 3, 6.5]},
+			"faces": {
+				"north": {"uv": [4, 8, 5, 12.5], "texture": "#2"},
+				"east": {"uv": [5, 8, 6, 12.5], "texture": "#2"},
+				"south": {"uv": [10, 7, 11, 11.5], "texture": "#2"},
+				"west": {"uv": [6, 10.5, 7, 15], "texture": "#2"},
+				"up": {"uv": [2.5, 12.5, 1.5, 11.5], "texture": "#2"},
+				"down": {"uv": [3.5, 11.5, 2.5, 12.5], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 0.75, 2.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 0.75, 2.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [-16, 90, -14],
+			"scale": [0.63281, 0.63281, 0.63281]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-16, 90, -14],
+			"scale": [0.63, 0.63, 0.63]
+		}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [7.5, 12, 6.5],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

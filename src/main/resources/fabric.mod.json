@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "yakas-ditch-1",
+	"version": "${version}",
+	"name": "Yakas Ditch 1",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/yakas-ditch-1/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.notion.dvewl.yakasditch1.YakasDitch1"
+		],
+		"client": [
+			"net.notion.dvewl.yakasditch1.YakasDitch1Client"
+		],
+		"fabric-datagen": [
+			"net.notion.dvewl.yakasditch1.YakasDitch1DataGenerator"
+		]
+	},
+	"mixins": [
+		"yakas-ditch-1.mixins.json",
+		{
+			"config": "yakas-ditch-1.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

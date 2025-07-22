@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "yakas-ditch-1:block/opium_ore"
+  }
+}
