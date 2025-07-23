@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.notion.dvewl.yakasditch1.block.ModBlocks;
 import net.notion.dvewl.yakasditch1.enchantment.ModEnchantments;
 import net.notion.dvewl.yakasditch1.item.ModItems;
+import net.notion.dvewl.yakasditch1.network.MiningModePacket;
 import net.notion.dvewl.yakasditch1.worldgen.ModWorldGen;
 
 import org.slf4j.Logger;
@@ -19,6 +20,6 @@ public class YakasDitch1 implements ModInitializer {
 		ModBlocks.RegisterModBlocks();
 		ModWorldGen.registerPlacedFeatures();
 		ModEnchantments.registerModEnchantments();
-		
+		MiningModePacket.registerServerReceiver();
 	}
 }

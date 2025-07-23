@@ -1,0 +1,9 @@
+{
+    "itemGroup.yakasditch_tab": "Предмети YakasDitch",
+    "item.yakas-ditch-1.opium_item": "Опіум",
+    "block.yakas-ditch-1.opium_ore": "Опіумова руда",
+    "item.yakas-ditch-1.opium_sword": "Опіумовий меч",
+    "item.yakas-ditch-1.opium_pickaxe": "Опіумова кірка",
+    "key.yakasditch1.change_mining_mode": "Змінити режим копання",
+    "category.yakasditch1.general": "YakasDitch"
+}
