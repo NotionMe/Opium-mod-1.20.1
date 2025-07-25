@@ -2,7 +2,9 @@ package net.notion.dvewl.yakasditch1.item;
 
 import java.util.function.Function;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -41,6 +43,19 @@ public class ModItems {
                         settings -> new OpiumPickaxe_level3(OpiumToolMaterial.INSTANCE, 1, -2.8f, settings),
                         new Item.Settings());
 
+        public static final Item ENDER_NETHERITE_HELMET = registerItem("ender_netherite_helmet",
+                        new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.HELMET,
+                                        new FabricItemSettings()));
+        public static final Item ENDER_NETHERITE_CHESPLATE = registerItem("ender_netherite_chestplate",
+                        new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.CHESTPLATE,
+                                        new FabricItemSettings()));
+        public static final Item ENDER_NETHERITE_LEGGINGS = registerItem("ender_netherite_leggings",
+                        new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.LEGGINGS,
+                                        new FabricItemSettings()));
+        public static final Item ENDER_NETHERITE_BOOTS = registerItem("ender_netherite_boots",
+                        new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.BOOTS,
+                                        new FabricItemSettings()));
+
         // Item Group
         public static final ItemGroup YAKASDITCH_GROUP = Registry.register(
                         Registries.ITEM_GROUP,
@@ -57,6 +72,10 @@ public class ModItems {
                                                 entries.add(OPIUM_PICKAXE_LEVEL1);
                                                 entries.add(OPIUM_PICKAXE_LEVEL2);
                                                 entries.add(OPIUM_PICKAXE_LEVEL3);
+                                                entries.add(ENDER_NETHERITE_HELMET);
+                                                entries.add(ENDER_NETHERITE_CHESPLATE);
+                                                entries.add(ENDER_NETHERITE_LEGGINGS);
+                                                entries.add(ENDER_NETHERITE_BOOTS);
                                         })
                                         .build());
 
@@ -65,6 +84,10 @@ public class ModItems {
 
                 Item item = itemFactory.apply(settings);
                 return Registry.register(Registries.ITEM, itemId, item);
+        }
+
+        private static Item registerItem(String name, Item item) {
+                return Registry.register(Registries.ITEM, new Identifier(YakasDitch1.MOD_ID, name), item);
         }
 
         public static void RegisterModItems() {

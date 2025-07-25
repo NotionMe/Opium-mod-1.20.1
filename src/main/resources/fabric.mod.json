@@ -18,8 +18,8 @@
 		"main": [
 			"net.notion.dvewl.yakasditch1.YakasDitch1"
 		],
+
 		"client": [
-			"net.notion.dvewl.yakasditch1.YakasDitch1Client"
 		],
 		"fabric-datagen": [
 			"net.notion.dvewl.yakasditch1.YakasDitch1DataGenerator"
